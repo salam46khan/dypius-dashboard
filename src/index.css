@@ -1,0 +1,33 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+.container{
+  width: 100%;
+  max-width: 1440px;
+  margin: 0 auto;
+}
+.my-btn {
+  border-radius: 170px;
+  border: 1px solid #95A2F2;
+  background: #5570D3;
+  backdrop-filter: blur(30px);
+  padding: 10px 30px;
+  font-size: 16px;
+  color: #E8ECFF;
+  position: relative;
+  /* overflow: hidden; */
+}
+.my-btn::after{
+  content: '';
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  bottom: 0%;
+  left: 0;
+  border: 1px soli;
+  background: url('../src/assets/svg/btn-bg.svg');
+  background-size: cover;
+  background-position: center;
+  z-index: -1;
+}

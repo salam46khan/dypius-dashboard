@@ -1,0 +1,30 @@
+.sidenav ul li a {
+    display: flex;
+    justify-content: start;
+    align-items: center;
+    font-size: 16px;
+    gap: 5px;
+    padding: 12px;
+    border-radius: 50px;
+    border: 1px solid transparent;
+}
+
+.sidenav ul li a.active {
+    border-radius: 100px;
+    border: 1px solid #FDFDFF30;
+    background: rgba(16, 22, 48, 0.30);
+    backdrop-filter: blur(30px);
+    position: relative;
+    color: #E8ECFF;
+}
+.sidenav ul li a.active::after{
+    content: '';
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    background: url('../../assets/svg/Vector 39.svg');
+    background-size: cover;
+    z-index: -1;
+}
