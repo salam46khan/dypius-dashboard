@@ -16,7 +16,11 @@
   font-size: 16px;
   color: #E8ECFF;
   position: relative;
-  /* overflow: hidden; */
+  overflow: hidden;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 8px;
 }
 .my-btn::after{
   content: '';

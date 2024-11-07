@@ -11,7 +11,7 @@ import { MdOutlineLockOpen } from 'react-icons/md';
 
 const SideNav = () => {
     return (
-        <div className='sidenav'>
+        <div className='sidenav py-3 p-2'>
             <Link to={'/'} className='h-12 w-12 my-2 md:w-auto p-1 block'>
                 <img className='object-cover h-full object-left' src={logo} alt="" />
             </Link>

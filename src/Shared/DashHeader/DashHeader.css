@@ -1,0 +1,24 @@
+.liniar-btn{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 1px solid #FDFDFF30;
+    background: rgba(16, 22, 48, 0.30);
+    backdrop-filter: blur(30px);
+    position: relative;
+    color: #E8ECFF;
+    overflow: hidden;
+    gap: 8px;
+}
+.liniar-btn::after{
+    content: '';
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    background: url('../../assets/svg/Vector 39.svg');
+    background-size: cover;
+    background-position:left top;
+    z-index: -1;
+}
