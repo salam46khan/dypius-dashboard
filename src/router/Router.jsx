@@ -3,6 +3,7 @@ import { createBrowserRouter } from 'react-router-dom';
 import Home from '../pages/Home';
 import Root from '../layout/Root';
 import Dashboard from '../layout/Dashboard';
+import Dypius from '../pages/Dypius/Dypius';
 
 const Router = createBrowserRouter([
     {
@@ -25,7 +26,7 @@ const Router = createBrowserRouter([
             },
             {
                 path: 'dypius',
-                element: <p>Dypius</p>
+                element: <Dypius />
             },
             {
                 path: 'staking',

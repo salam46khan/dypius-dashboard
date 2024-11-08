@@ -13,7 +13,7 @@ const Dashboard = () => {
                     <div className=" border-b border-[#171938]">
                         <DashHeader />
                     </div>
-                    <div>
+                    <div className="p-3">
                         <Outlet></Outlet>
                     </div>
                 </div>
