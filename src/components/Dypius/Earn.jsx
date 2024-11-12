@@ -1,6 +1,9 @@
 import coinBG from '../../assets/svg/coinBackground.25219c3dcba12fca50d1 1.svg'
 import coinImg from '../../assets/img/download 1.png'
 import EarnOption from './EarnOption';
+import { TbCurrencyEthereum } from 'react-icons/tb';
+import { FaBitcoin } from 'react-icons/fa';
+import { SiAvast } from 'react-icons/si';
 const Earn = () => {
     return (
         <div className="earn flex flex-col md:flex-row gap-4">
@@ -9,12 +12,12 @@ const Earn = () => {
                 <p className="text-[#A4AABF] text-[16px] w-full max-w-sm">
                     Maximize your assets with Dypius Earn products. Dypius provides three productive methods to utilize your assets: Staking, Farming, and Vault. Begin earning now!
                 </p>
-                <div className='flex items-center gap-3 flex-wrap justify-start'>
-                    <EarnOption />
-                    <div></div>
-                    <EarnOption />
-                    <div></div>
-                    <EarnOption />
+                <div className='flex items-center gap-3 justify-start '>
+                    <EarnOption icon={<TbCurrencyEthereum />} number={9188}/>
+                    <div className='earn-divider'></div>
+                    <EarnOption icon={<FaBitcoin />} number={10195}/>
+                    <div className='earn-divider'></div>
+                    <EarnOption icon={<SiAvast />} number={27000}/>
                     
                 </div>
             </div>
